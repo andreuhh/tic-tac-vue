@@ -4,7 +4,7 @@
     <h1>Vue tic tac toe</h1>
     <h2 v-if="winner">Winner: {{ winner }}</h2>
     <h2 v-else>Players-move: {{ player }}</h2>
-    <button @click="reset" class="btn btn-success mb-3">Reset</button>
+    <button @click="reset" class="btn btn-primary mb-3">Reset</button>
 
     <div v-for="(_, x) in 3" :key="x" class="row">
       <button v-for="(_, y) in 3" :key="y" class="square" @click="move(x, y)">
